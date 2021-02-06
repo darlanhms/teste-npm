@@ -1,0 +1,21 @@
+{
+  "name": "darlan-teste-npm",
+  "version": "1.0.0",
+  "repository": "https://github.com/darlanhms/teste-npm.git",
+  "author": "darlan <darlanhermessjb@hotmail.com>",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "scripts": {
+    "prepare" : "npm run build",
+    "version" : "git add -A src",
+    "postversion" : "git push && git push --tags",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.1.3"
+  }
+}
